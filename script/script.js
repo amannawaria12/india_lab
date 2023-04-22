@@ -30,7 +30,8 @@ $(document).ready(function() {
         $('#confirm-password').attr('type', 'password');
       }
     });
-
+    
+    // Load data from JSON file on button click
     $("#load-data").click(function() {
       $.getJSON("assets/data.json", function(data) {
         // Populate form fields with data
@@ -54,6 +55,7 @@ $(document).ready(function() {
       });
     });
     
+    // Filter options in select2 based on selection in select1
     document.getElementById('select1').addEventListener('change', function() {
       var parentValue = this.value;
       var childSelect = document.getElementById('select2');
@@ -73,7 +75,7 @@ $(document).ready(function() {
         }
       }
     });
-
+    // Submit form and display alert with user input
     $('form').submit(function(event) {
       event.preventDefault();
       var name = $('#name').val();
