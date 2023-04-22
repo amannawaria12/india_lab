@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <title>aman-hotel_lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styling/style.css">	
+  </head>
+  <body>
+    <div class="container">
+      <h1>Underwater Team Bingo Signup</h1>
+      <form>
+
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email" required>
+        </div>
+
+        <!-- Phone -->
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="Enter your Password" required>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Enter your Password Again" required>
+          <div id="password-error" class="error"></div>
+          <input type="checkbox" id="show-password" name="show-password">Show Password
+        </div>
+
+        <!-- Date -->
+        <div class="form-group">
+          <label for="work-start-date">Game Starting Date:</label>
+          <input type="date" class="form-control" id="work-start-date" name="work-start-date" required>
+        </div>
+
+        <!-- Time -->
+        <div class="form-group">
+          <label for="work-start-time">Game Starting Time:</label>
+          <input type="time" class="form-control" id="work-start-time" name="work-start-time" required>
+        </div>
+
+
+        <!-- Age -->
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" class="form-control" id="age" name="age" placeholder="Enter your Age" required>
+        </div>
+
+        <!-- CC Number -->
+        <div class="form-group">
+          <label for="credit-card">Credit Card Number</label>
+          <input type="text" class="form-control" id="credit-card" name="credit-card" placeholder="Enter your credit card number" required>
+        </div>
+
+        <!-- SSN -->
+        <div class="form-group">
+          <label for="ssn">Social Security Number</label>
+          <input type="text" class="form-control" id="ssn" name="ssn" placeholder="Enter your social security number" required>
+        </div>
+        
+        <!-- Gender -->
+        <div class="form-group">
+          <label>Gender:</label>
+          <div class="radio-group">
+            <div class="radio">
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="other" name="gender" value="other">
+              <label for="other">Other</label>
+            </div>
+          </div>
+        </div>
+        
+        <!-- About -->
+        <div class="form-group">
+          <label>How did you hear about us?</label>
+          <div class="checkbox-group">
+            <input type="checkbox" id="social" name="about" value="social">
+            <label class="checkbox-label" for="social">Social-Media</label>
+            <input type="checkbox" id="friend" name="about" value="friend">
+            <label class="checkbox-label" for="friend">Friend</label>
+          </div>
+        </div>
+
+
+        <!--dependent input-->
+        <label for="select1">Select the Bingo Room</label>
+        <select id="select1" name="select1">
+          <option value="">Select a room</option>
+          <option value="option1">Bingo Room 1</option>
+          <option value="option2">Bingo Room 2</option>
+          <option value="option3">Bingo Room 3</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="select2">Select Game:</label>
+        <select id="select2" name="select2">
+          <option value="">Select a Game</option>
+          <option value="option1a" data-parent="option1">Patience</option>
+          <option value="option1b" data-parent="option1">Blackjack</option>
+          <option value="option2a" data-parent="option2">Poker</option>
+          <option value="option2b" data-parent="option2">Rummy</option>
+          <option value="option3a" data-parent="option3">Crazy-Eights</option>
+          <option value="option3b" data-parent="option3">Bluff</option>
+        </select>
+
+        <br>
+        <br>
+
+        <!-- Add. Info text area -->
+        <div class="form-group">
+          <label for="interests">Additional Information:</label>
+          <textarea class="form-control" id="interests" name="interests" rows="3"></textarea>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+
+        <br>
+        <button type="submit" id="load-data">Load Data</button>
+
+        
+        
+        <br>
+
+        <!-- Clear Button -->
+        <button type="reset" class="btn btn-secondary">Clear</button>	
+
+      </form>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Famannawaria12.github.io%2Findia_lab%2F" target="_blank"> Check Page Validation </a>
+      <div class="footer-links">
+        <a href="https://github.com/amannawaria12" target="_blank">My Github</a>
+        <a href="https://github.com/amannawaria12/india_lab" target="_blank">My Repo Source Code</a>
+      </div>
+    </footer>
+
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    
+    <!-- Include custom script -->
+    <script src="./script/script.js"></script>
+  </body>
+</html>

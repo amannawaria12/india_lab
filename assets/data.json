@@ -1,0 +1,14 @@
+{
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "phone": "1234567890",
+  "password": "mypassword",
+  "work-start-date": "2023-05-01",
+  "work-start-time": "08:00",
+  "bingo-room": "room3",
+  "age": 25,
+  "credit-card": "1234567890123456",
+  "ssn": "123-45-6789",
+  "gender": "male",
+  "about": ["social"]
+}
